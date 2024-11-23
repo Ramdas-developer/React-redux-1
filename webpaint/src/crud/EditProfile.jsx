@@ -3,13 +3,14 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 const EditProfile = () => {
-  const Url = "http://localhost:5001/data";
+  const Url = "http://localhost:8000/api";
 
   const navigate = useNavigate();
   const location = useLocation();
   const { userData } = location.state || {};
-  const { id } = useParams("");
-  console.log(id, "edit id");
+  const { _id } = useParams("");
+  console.log(_id, "edit id");
+  console.log("userdata:", userData)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,8 +39,8 @@ const EditProfile = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`${Url}/${userData.id}`, formData);
-      navigate(`/showdata?userId=${userData.id}`, { state: { success: true } });
+      await axios.put(`${Url}/${userData._id}`, formData);
+      navigate(`/showdata?userId=${userData._id}`, { state: { success: true } });
     } catch (error) {
       console.error("Error updating data", error);
     }

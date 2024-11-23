@@ -29,9 +29,9 @@
   align-items: center;
   justify-content: center;
 }
-.data-table{
-  margin-top: 8%;
-}
+/* .data-table{
+  margin-top: 4%;
+} */
 .log-container {
   display: flex;
   flex-direction: column;

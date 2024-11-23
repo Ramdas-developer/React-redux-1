@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./create.css";
-import './mylogin.css';
-
+import "./mylogin.css";
+import loginAPi from "../action";
 
 const MyLogin = () => {
   const navigate = useNavigate();
@@ -10,29 +10,41 @@ const MyLogin = () => {
   const [password, setPassword] = useState("");
   console.log(email);
   console.log(password);
-
+  useEffect(() => {
+    const loadPage = async () => {
+      try {
+        const respone = await loginAPi();
+        console.log(respone, "dfdskfdsfjsd");
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    loadPage()
+  }, []);
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5001/data");
+      const response = await loginAPi();
       console.log(response);
 
-      const data = await response.json();
-      console.log(data);
+      // const data = await response.json();
+      // console.log("All user",data);
 
-      const user = data.find(
+      const user = response.find(
         (user) => user.email === email && user.password === password
       );
-      console.log(user);
+      console.log("Login user after find by id :", user);
       if (user) {
-        navigate(`/showdata?userId=${user.id}`);
+        navigate(`/showdata?userId=${user._id}`);
         // navigate("/ShowData");
         alert("User Login Successfully");
         console.log("Login successfully");
         // navigate(`/showdata`);
       } else {
-        alert("Email and Password is wrong. If you don't account Please Create New User.");
+        alert(
+          "Email and Password is wrong. If you don't account Please Create New User."
+        );
         // navigate("/create2");
       }
     } catch (error) {
@@ -41,8 +53,8 @@ const MyLogin = () => {
   };
 
   const handleRegister = () => {
-    navigate('/create2')
-  }
+    navigate("/create2");
+  };
 
   return (
     <div>
@@ -81,20 +93,25 @@ const MyLogin = () => {
           </label>
         </div>
 
-        
         <div className="register-container">
-        <div className="button-wrapper">
-        <button className="login-conatainer" type="submit" class="btn btn-primary btn-me4" value={"submit"}>
-          Login
-        </button>
-        </div>
+          <div className="button-wrapper">
+            <button
+              className="login-conatainer"
+              type="submit"
+              class="btn btn-primary btn-me4"
+              value={"submit"}
+            >
+              Login
+            </button>
+          </div>
 
-        <div className="button-wrapper">
-        <button id="regisbtn" onClick={handleRegister}>Register here</button>
-        <label htmlFor="regisbtn">(if you don't account)</label>
+          <div className="button-wrapper">
+            <button id="regisbtn" onClick={handleRegister}>
+              Register here
+            </button>
+            <label htmlFor="regisbtn">(if you don't account)</label>
+          </div>
         </div>
-        </div>
- 
       </form>
 
       {/* <ShowData /> */}

@@ -1,8 +1,5 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Profile from "./components/Profile";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import MyAction from "./redux/MyAction";
@@ -14,9 +11,8 @@ import MyNav from "./components/MyNav";
 import MyLogin from "./crud/MyLogin";
 import ShowData from "./crud/ShowData";
 import EditProfile from "./crud/EditProfile";
-// import FormComponent from "./crud/FormComponent";
-// import DataTableComponent from "./crud/DataTableComponent";
-// import Read from "./crud/Read";
+import CreateForm from "./crud/CreateForm";
+import ShowDataTable from "./crud/ShowDataTable";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,9 +22,7 @@ const App = () => {
       <BrowserRouter>
         <MyNav />
         <Routes>
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile/:id" element={<Profile />} />
+          
           <Route path="/action" element={<MyAction />} />
           <Route path="/loginsign" element={<LoginSign />} />
           <Route path="/home" element={<Home />} />
@@ -37,9 +31,9 @@ const App = () => {
           <Route path="/mylogin" element={<MyLogin />} />
           <Route path="/showdata" element={<ShowData />} />
           <Route path="/editprofile/:id" element={<EditProfile />} />
-          {/* <Route path="/formcomponenet" element={<FormComponent/>} /> */}
-          {/* <Route path="/datatablecomponent" element={<DataTableComponent/>} /> */}
-          {/* <Route path="/read"         element={<Read/>} /> */}
+          <Route path="/register" element={<CreateForm/>}/>
+          <Route path="/user detail" element={<ShowDataTable/>}/>
+         
         </Routes>
       </BrowserRouter>
     </Provider>
