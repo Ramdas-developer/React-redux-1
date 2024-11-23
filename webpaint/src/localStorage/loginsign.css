@@ -1,0 +1,18 @@
+.sign{
+    max-width: 400px;
+    border: 3px solid black;
+    height : 250px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+
+    
+}
+input{
+    margin: 15px;
+}
+
+

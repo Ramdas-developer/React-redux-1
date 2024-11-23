@@ -1,0 +1,165 @@
+{
+  "data": [
+    {
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "phone": "3434445678",
+      "password": "123456",
+      "id": "a31f"
+    },
+    {
+      "name": "manpreet singh",
+      "email": "manp@gmail.com",
+      "phone": "7372736372",
+      "password": "123jsjsjs",
+      "id": "6aeb"
+    },
+    {
+      "id": "8a99",
+      "name": "nikhil",
+      "email": "nik@gmail.com",
+      "phone": "8363673887",
+      "password": "nik@1234"
+    },
+    {
+      "name": "rehmanat",
+      "email": "reh@gmail.com",
+      "phone": "8363673887",
+      "password": "rehmanat@1234",
+      "id": "eea2"
+    },
+    {
+      "id": "6158",
+      "name": "amit",
+      "email": "amit@gmail.com",
+      "phone": "9877234567",
+      "password": "amit@1234"
+    },
+    {
+      "id": "65f0",
+      "name": "kartar",
+      "email": "kartar@gmail.com",
+      "phone": "7373637282",
+      "password": "kartar@gmail.com"
+    },
+    {
+      "id": "c87b",
+      "name": "parat",
+      "email": "parat@gmail.com",
+      "phone": "9812345678",
+      "password": "parat@12345"
+    },
+    {
+      "id": "07fc",
+      "name": "kamal",
+      "email": "kamal@gmail.com",
+      "phone": "9238382718",
+      "password": "kamal@gmail.com"
+    },
+    {
+      "id": "b692",
+      "name": "karan",
+      "email": "karan@gmail.com",
+      "phone": "9877654321",
+      "password": "karan@1234"
+    },
+    {
+      "name": "pritpal kat",
+      "email": "sumit@gmail.com",
+      "phone": "9876452312",
+      "password": "123456",
+      "id": "d79a"
+    },
+    {
+      "name": "kartaran",
+      "email": "kartaran@gmail.com",
+      "phone": "1234567890",
+      "password": "kart@1234",
+      "id": "a1e7"
+    },
+    {
+      "id": "3adb",
+      "name": "sohan",
+      "email": "sohan@gmail.com",
+      "phone": "9877654323",
+      "password": "soha@1234"
+    },
+    {
+      "id": "2a33",
+      "name": "munna",
+      "email": "munna@gmail.com",
+      "phone": "5675467",
+      "password": "123456"
+    },
+    {
+      "id": "6957",
+      "name": "harpal",
+      "email": "sumit@gmail.com",
+      "phone": "7373763965",
+      "password": "12345678"
+    },
+    {
+      "id": "0b9b",
+      "name": "sohail",
+      "email": "sohail@gmail.com",
+      "phone": "7645367121",
+      "password": "12345678"
+    },
+    {
+      "name": "karan kumar",
+      "email": "karandarjee@gmail.com",
+      "phone": "7856345678",
+      "password": "12345678",
+      "id": "49d7"
+    },
+    {
+      "id": "a504",
+      "name": "manat",
+      "email": "manat@gmail.com",
+      "phone": "9756432167",
+      "password": "mana@1234"
+    },
+    {
+      "id": "8583",
+      "name": "manat",
+      "email": "manat@gmail.com",
+      "phone": "9756432167",
+      "password": "mana@1234"
+    },
+    {
+      "id": "f784",
+      "name": "suhail",
+      "email": "sumit@gmail.com",
+      "phone": "7856431289",
+      "password": "suha@1234"
+    },
+    {
+      "id": "b099",
+      "name": "gurleen",
+      "email": "gurleen@gmail.com",
+      "phone": "9877323956",
+      "password": "aman@1234"
+    },
+    {
+      "id": "298e",
+      "name": "sunny",
+      "email": "sunny@gmail.com",
+      "phone": "9877323957",
+      "password": "sunn@1234"
+    },
+    {
+      "name": "harman rathore",
+      "email": "harman@gmail.com",
+      "phone": "7654328976",
+      "password": "harm@1234",
+      "id": "ec02"
+    },
+    {
+      "id": "7364",
+      "name": "jagman",
+      "email": "jagman@gmail.com",
+      "phone": "9877325643",
+      "password": "jagm@1234"
+    }
+  ]
+}
